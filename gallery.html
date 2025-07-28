@@ -2,114 +2,172 @@
 <html lang="en">
 
 <head>
-  <title>Book Haven Bookstore - Gallery</title>
-  <script src="https://kit.fontawesome.com/cef767123c.js" crossorigin="anonymous"></script>
+  <title>Book Haven Bookstore - Gallery</title>  <script src="https://kit.fontawesome.com/cef767123c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <section>
+  <section class="header">
     <header>
-      <img src="images/logo.png">
-      <h1>Book Haven Bookstore</h1>
+      <div class="header-row">
+        <img id="logo" src="images/logo.png" alt="Book Haven Logo" />
+        <span id="company" class="title_large">Book Haven<br />Bookstore</span>
+      </div>
     </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="impact.html">Company Impact</a></li>
-      </ul>
+      <div id="plainMenu">
+        <ul id="plainMenuList">
+          <li class="title"><a href="index.html">Home</a></li>
+          <li class="title"><a href="gallery.html">Gallery</a></li>
+          <li class="title"><a href="about.html">About Us</a></li>
+          <li class="title"><a href="impact.html">Company Impact</a></li>
+        </ul>
+      </div>
+      <div id="burgerMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+        <ul id="burgerMenuList">
+          <li class="title"><a href="index.html">Home</a></li>
+          <li class="title"><a href="gallery.html">Gallery</a></li>
+          <li class="title"><a href="about.html">About Us</a></li>
+          <li class="title"><a href="impact.html">Company Impact</a></li>
+        </ul>
+      </div>
     </nav>
   </section>
   <main>
-    <section>
-      <div>
-        <h2>Gallery</h2>
+    <section class="page-header">
+      <div class="page-header-title">
+        <span class="title">Gallery</span>
       </div>
-      <div>
-        <a href="">
-          View Cart
-          <i class="fa-solid fa-cart-shopping"></i>
+      <div class="gallery-cart">
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>View Cart
         </a>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="images/Client3_Book1.png" />
-        <h3>Brie Mine 4Ever</h3>
-        <p>A book for cheese lovers</p>
-        <p><a href="">Add to Cart</a></p>
+    <section id="gallery">
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Book1.png" />
+          <h3>Brie Mine 4Ever</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A book for cheese lovers</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Book2.png" />
-        <h3>Glory Riders</h3>
-        <p>A book about bikers</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Book2.png" />
+          <h3>Glory Riders</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A book about bikers</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Book3.png" />
-        <h3>Sorcerer's Shadowed Chronicles</h3>
-        <p>A fantasy book</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Book3.png" />
+          <h3>Sorcerer's Shadowed Chronicles</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A fantasy book</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Magazine1.png" />
-        <h3>Ball</h3>
-        <p>A magazine about pickleball</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Magazine1.png" />
+          <h3>Ball</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A magazine about pickleball</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Magazine2.png" />
-        <h3>Travel</h3>
-        <p>A magazine for travelers</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Magazine2.png" />
+          <h3>Travel</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A magazine for travelers</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Magazine3.png" />
-        <h3>Eat.</h3>
-        <p>A magazine for foodies</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Magazine3.png" />
+          <h3>Eat.</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A magazine for foodies</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Notebook.png" />
-        <h3>Book Haven Bookstore Notebook</h3>
-        <p>A notebook with text on the cover that says <i>Book Haven Bookstore</i></p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Notebook.png" />
+          <h3>Book Haven Bookstore Notebook</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A notebook with text on the cover that says <i>Book Haven Bookstore</i></p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_Stickers.png" />
-        <h3>Book Haven Bookstore stickers</h3>
-        <p>A set of four Book Haven Bookstore stickers that promote reading</p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_Stickers.png" />
+          <h3>Book Haven Bookstore stickers</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A set of four Book Haven Bookstore stickers that promote reading</p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
-      <div>
-        <img src="images/Client3_ToteBag.png" />
-        <h3>Canvas Tote Bag</h3>
-        <p>A canvas tote bag with black lettering that says <i>ALL I DO IS READ READ READ</i></p>
-        <p><a href="">Add to Cart</a></p>
+      <div class="gallery-item">
+        <div class="gallery-item-top">
+          <img src="images/Client3_ToteBag.png" />
+          <h3>Canvas Tote Bag</h3>
+        </div>
+        <div class="gallery-item-bottom">
+          <p>A canvas tote bag with black lettering that says <i>ALL I DO IS READ READ READ</i></p>
+          <a href="">Add to Cart</a>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <section>
-      <div>Sign up for our newsletter</div>
-      <div>
+    <div class="footer-row">
+      <section class="footer-newsletter">
+        <span class="newsletter-label">Sign up for<span class="break"><br /></span> our newsletter</span>
         <form>
-          <input type="email" />
+          <input type="email" placeholder="Email" />
           <input type="button" value="Subscribe" />
         </form>
-      </div>
-    </section>
-    <section>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-square-instagram"></i>
-      <i class="fa-brands fa-square-x-twitter"></i>
-      <i class="fa-brands fa-square-youtube"></i>
-    </section>
-    <section>
-      <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a
-        href="impact.html">Company Impact</a>
-    </section>
+      </section>
+      <section class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+      </section>
+      <section class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="impact.html">Company Impact</a>
+      </section>
+    </div>
   </footer>
 </body>
 

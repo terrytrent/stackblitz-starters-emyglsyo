@@ -4,30 +4,53 @@
 <head>
   <title>Book Haven Bookstore - About Us</title>
   <script src="https://kit.fontawesome.com/cef767123c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <section>
+  <section class="header">
     <header>
-      <img src="images/logo.png">
-      <h1>Book Haven Bookstore</h1>
-      <h2>About Us</h2>
+      <div class="header-row">
+        <img id="logo" src="images/logo.png" alt="Book Haven Logo" />
+        <span id="company" class="title_large">Book Haven<br />Bookstore</span>
+      </div>
     </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="impact.html">Company Impact</a></li>
-      </ul>
+      <div id="plainMenu">
+        <ul id="plainMenuList">
+          <li class="title"><a href="index.html">Home</a></li>
+          <li class="title"><a href="gallery.html">Gallery</a></li>
+          <li class="title"><a href="about.html">About Us</a></li>
+          <li class="title"><a href="impact.html">Company Impact</a></li>
+        </ul>
+      </div>
+      <div id="burgerMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+        <ul id="burgerMenuList">
+          <li class="title"><a href="index.html">Home</a></li>
+          <li class="title"><a href="gallery.html">Gallery</a></li>
+          <li class="title"><a href="about.html">About Us</a></li>
+          <li class="title"><a href="impact.html">Company Impact</a></li>
+        </ul>
+      </div>
     </nav>
   </section>
   <main>
-    <section>
-      <div>
-        <h2>About Us</h2>
+    <section class="page-header">
+      <div class="page-header-title">
+        <span class="title">About Us</span>
       </div>
-      <div>
+    </section>
+    <section class="about-section">
+      <div class="about-content">
         <p>
           Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books,
           magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and
@@ -41,11 +64,11 @@
         </p>
       </div>
     </section>
-    <section>
-      <div>
-        <h3>Business Hours</h3>
+    <section class="business-hours-section">
+      <div class="business-hours-header">
+        <span class="title">Business Hours</span>
       </div>
-      <div>
+      <div class="business-hours-content">
         <table>
           <tr>
             <td>Monday - Friday:</td>
@@ -62,23 +85,23 @@
         </table>
       </div>
     </section>
-    <section>
-      <div>
-        <h3>Contact Us</h3>
+    <section class="contact-section">
+      <div class="contact-header">
+        <span class="title">Contact Us</span>
       </div>
-      <div>
-        <form>
+      <div class="contact-content">
+        <form class="contact-form">
           <label>
-            Name:<br />
-            <input type="text" id="name" />
+            Name*<br />
+            <input type="text" id="name" required placeholder="John Smith" />
           </label><br />
           <label>
-            Email Address:<br />
-            <input type="email" id="email" />
+            Email Address*<br />
+            <input type="email" id="email" required placeholder="user@email.com" />
           </label><br />
           <label>
-            Phone Number:<br />
-            <input type="tel" id="phone" />
+            Phone Number*<br />
+            <input type="tel" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" />
           </label><br />
           <label>
             Feedback/Order Information:<br />
@@ -88,33 +111,40 @@
             <input type="checkbox" id="customOrder">
             Custom Order
           </label><br />
-          <button>
-            Clear Form
-          </button>
+          <div class="buttons">
+            <button type="reset" class="clear-button">
+              Clear Form
+            </button>
+            <button type="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </section>
   </main>
   <footer>
-    <section>
-      <div>Sign up for our newsletter</div>
-      <div>
+    <div class="footer-row">
+      <section class="footer-newsletter">
+        <span class="newsletter-label">Sign up for<span class="break"><br /></span> our newsletter</span>
         <form>
-          <input type="email" />
+          <input type="email" placeholder="Email" />
           <input type="button" value="Subscribe" />
         </form>
-      </div>
-    </section>
-    <section>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-square-instagram"></i>
-      <i class="fa-brands fa-square-x-twitter"></i>
-      <i class="fa-brands fa-square-youtube"></i>
-    </section>
-    <section>
-      <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="about.html">About Us</a> | <a
-        href="impact.html">Company Impact</a>
-    </section>
+      </section>
+      <section class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+      </section>
+      <section class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="impact.html">Company Impact</a>
+      </section>
+    </div>
   </footer>
 </body>
 
