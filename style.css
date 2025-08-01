@@ -33,28 +33,10 @@ html {
   font-size: 1.5625rem;
 }
 
-.subtitle {
-  font-family: Comfortaa;
-  font-weight: normal;
-  font-size: 0.9375rem;
-}
-
 .body_large {
   font-family: Calibri;
   font-weight: normal;
   font-size: 1.25rem;
-}
-
-.body_strong {
-  font-family: Calibri;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.captions {
-  font-family: Arial;
-  font-weight: normal;
-  font-size: 0.6875rem;
 }
 
 section.header {
@@ -164,8 +146,8 @@ main {
 
 .page-header .gallery-cart a:hover {
   color: #742c36;
-  text-shadow: 0 0 5px #fff,
-    0 0 10px #fff;
+  text-shadow: 0 0 5px #c1cfd6,
+    0 0 10px #c1cfd6;
 }
 
 #callToAction {
@@ -266,10 +248,10 @@ main {
 #shopByCategory .categoryItem {
   display: flex;
   align-items: center;
-  background: #eee;
+  background: #ffffff;
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 3.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #c1cfd6;
   font-size: 1.25rem;
   font-weight: bold;
   height: 3rem;
@@ -351,8 +333,7 @@ main {
 #productImages img {
   aspect-ratio: 1/1;
   object-fit: cover;
-  border: 1px solid #222;
-  background: #fafafa;
+  border: 1px solid #5c2e5c;
   border-radius: 15px;
   min-width: 150px;
   min-height: 100px;
@@ -360,8 +341,8 @@ main {
 }
 
 footer {
-  background: #ddd;
-  border: 1px solid #222;
+  background: #C1CFD6;
+  border: 1px solid #2e2e4e;
   padding: 0;
   margin: 0;
   display: block
@@ -406,7 +387,7 @@ footer {
   font-size: 1.1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  border: 1.5px solid #222;
+  border: 1.5px solid #2e2e4e;
   width: 400px;
   margin-bottom: 0.5rem;
 }
@@ -416,9 +397,9 @@ footer {
   font-weight: bold;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  border: 1.5px solid #222;
-  background: #888;
-  color: #fff;
+  border: 1.5px solid #2e2e4e;
+  background: #5c2e5c;
+  color: #ffffff;
   width: 400px;
   height: 50px;
   cursor: pointer;
@@ -436,16 +417,16 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+  border-top: 1px solid #2e2e4e;
+  border-bottom: 1px solid #2e2e4e;
   width: 100%
 }
 
 .footer-social i {
   font-size: 2rem;
   margin: 0.25rem 0;
-  color: #111;
-  background: #fff;
+  color: #2e2e4e;
+  background: #ffffff;
   border-radius: 50%;
   padding: 0.25em;
 }
@@ -464,7 +445,7 @@ footer {
 }
 
 .footer-links a {
-  color: #111;
+  color: #2e2e4e;
   text-decoration: none;
   margin-left: 0.5rem;
 }
@@ -476,7 +457,7 @@ footer {
 .footer-links a:not(:first-child)::before {
   content: "|";
   margin: 0 0.5rem;
-  color: #111;
+  color: #2e2e4e;
 }
 
 #gallery {
@@ -494,7 +475,7 @@ footer {
   display: flex;
   flex-direction: column;
   background: #3e5641;
-  border: 1px solid #ccc;
+  border: 1px solid #c1cfd6;
   border-radius: 10px;
   text-align: left;
   color: #c1cfd6;
@@ -511,8 +492,7 @@ footer {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border: 1px solid #222;
-  background: #fff;
+  border: 1px solid #2e2e4e;
   margin-right: 1rem;
   flex-shrink: 0;
   border-radius: 15px;
@@ -540,7 +520,7 @@ footer {
   text-decoration: none;
   color: #c1cfd6;
   font-weight: bold;
-  background: #888;
+  background: #5c2e5c;
   padding: 0.5rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -548,7 +528,7 @@ footer {
 
 .gallery-item-bottom a:hover {
   background: #742c36;
-  color: #fff;
+  color: #c1cfd6;
 }
 
 .about-section {
@@ -650,9 +630,9 @@ footer {
   font-weight: bold;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  border: 1.5px solid #222;
-  background: #888;
-  color: #fff;
+  border: 1.5px solid #c1cfd6;
+  background: #5c2e5c;
+  color: #c1cfd6;
   min-width: 205px;
   height: 50px;
   cursor: pointer;
@@ -667,7 +647,7 @@ footer {
   width: 10%;
   height: 2rem;
   background-color: #742c36;
-  color: #ffffff;
+  color: #c1cfd6;
   border: none;
   cursor: pointer;
 }
@@ -708,7 +688,7 @@ footer {
 .impact-section .impact-content .impact-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  border-radius: 10px 10px  0 0;
+  border-radius: 10px 10px 0 0;
   background-color: #ffffff;
   color: #2e2e4e;
   width: 100%;
@@ -755,7 +735,7 @@ footer {
 
 .events-section .events-content .events-title {
   font-size: 1.5rem;
-  border-radius: 10px 10px  0 0;
+  border-radius: 10px 10px 0 0;
   background-color: #ffffff;
   color: #2e2e4e;
   width: 100%;
@@ -810,7 +790,7 @@ footer {
 
 .testimonials-section .testimonials-content .testimonials-title {
   font-size: 1.5rem;
-  border-radius: 10px 10px  0 0;
+  border-radius: 10px 10px 0 0;
   background-color: #ffffff;
   color: #2e2e4e;
   width: 100%;
@@ -846,7 +826,7 @@ footer {
   }
 
   section.header #company {
-    color: #333333;
+    color: #2e2e4e;
     text-align: left;
   }
 
@@ -905,7 +885,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     border-top: 0;
     border-bottom: 0;
-    border-left: 1px solid #222;
+    border-left: 1px solid #2e2e4e;
     padding: 0 1rem;
   }
 
@@ -915,7 +895,7 @@ footer {
 
   .footer-links a:not(:first-child)::before {
     content: "|";
-    color: #111;
+    color: #2e2e4e;
   }
 
   #gallery {
@@ -928,29 +908,29 @@ footer {
   }
 
   .impact-section .impact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: left;
-  gap: 1rem;
-  padding: 2rem;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: left;
+    gap: 1rem;
+    padding: 2rem;
+  }
 
   .events-section .events-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: left;
-  gap: 1rem;
-  padding: 2rem;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: left;
+    gap: 1rem;
+    padding: 2rem;
+  }
 
   .testimonials-section .testimonials-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: left;
-  gap: 1rem;
-  padding: 2rem;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: left;
+    gap: 1rem;
+    padding: 2rem;
+  }
 }

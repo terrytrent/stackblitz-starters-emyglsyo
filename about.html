@@ -17,10 +17,10 @@
     <header>
       <div class="header-row">
         <img id="logo" src="images/logo.png" alt="Book Haven Logo" />
-        <span id="company" class="title_large">Book Haven<br />Bookstore</span>
+        <h1 id="company" class="title_large">Book Haven<br />Bookstore</h1>
       </div>
     </header>
-    <nav>
+    <nav aria-label="Main Navigation">
       <div id="plainMenu">
         <ul id="plainMenuList">
           <li class="title"><a href="index.html">Home</a></li>
@@ -46,7 +46,7 @@
   <main>
     <section class="page-header">
       <div class="page-header-title">
-        <span class="title">About Us</span>
+        <h2 class="title">About Us</h2>
       </div>
     </section>
     <section class="about-section">
@@ -66,7 +66,7 @@
     </section>
     <section class="business-hours-section">
       <div class="business-hours-header">
-        <span class="title">Business Hours</span>
+        <h3 class="title">Business Hours</h3>
       </div>
       <div class="business-hours-content">
         <table>
@@ -87,28 +87,31 @@
     </section>
     <section class="contact-section">
       <div class="contact-header">
-        <span class="title">Contact Us</span>
+        <h3 class="title">Contact Us</h3>
       </div>
       <div class="contact-content">
         <form class="contact-form">
           <label>
             Name*<br />
-            <input type="text" id="name" required placeholder="John Smith" />
+            <input type="text" id="name" required placeholder="John Smith" aria-required="true" name="name"
+              aria-label="Name" />
           </label><br />
           <label>
             Email Address*<br />
-            <input type="email" id="email" required placeholder="user@email.com" />
+            <input type="email" id="email" required placeholder="user@email.com" aria-required="true" name="email"
+              aria-label="Email Address" />
           </label><br />
           <label>
             Phone Number*<br />
-            <input type="tel" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" />
+            <input type="tel" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"
+              aria-required="true" name="phone" aria-label="Phone Number" />
           </label><br />
           <label>
             Feedback/Order Information:<br />
-            <textarea id="feedback"></textarea>
+            <textarea id="feedback" name="feedback" aria-label="Feedback"></textarea>
           </label><br />
           <label>
-            <input type="checkbox" id="customOrder">
+            <input type="checkbox" id="customOrder" name="Custom Order" aria-label="Custom Order">
             Custom Order
           </label><br />
           <div class="buttons">
@@ -128,15 +131,15 @@
       <section class="footer-newsletter">
         <span class="newsletter-label">Sign up for<span class="break"><br /></span> our newsletter</span>
         <form>
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" aria-readonly="false" />
           <input type="button" value="Subscribe" />
         </form>
       </section>
       <section class="footer-social">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" aria-label="Facebook Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram" aria-label="Instagram Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter" aria-label="Twitter Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube" aria-label="YouTube Link"></i></a>
       </section>
       <section class="footer-links">
         <a href="index.html">Home</a>

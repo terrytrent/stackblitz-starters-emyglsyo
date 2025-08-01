@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Book Haven Bookstore - Gallery</title>  <script src="https://kit.fontawesome.com/cef767123c.js" crossorigin="anonymous"></script>
+  <title>Book Haven Bookstore - Gallery</title>
+  <script src="https://kit.fontawesome.com/cef767123c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +17,10 @@
     <header>
       <div class="header-row">
         <img id="logo" src="images/logo.png" alt="Book Haven Logo" />
-        <span id="company" class="title_large">Book Haven<br />Bookstore</span>
+        <h1 id="company" class="title_large">Book Haven<br />Bookstore</h1>
       </div>
     </header>
-    <nav>
+    <nav aria-label="Main Navigation">
       <div id="plainMenu">
         <ul id="plainMenuList">
           <li class="title"><a href="index.html">Home</a></li>
@@ -45,103 +46,103 @@
   <main>
     <section class="page-header">
       <div class="page-header-title">
-        <span class="title">Gallery</span>
+        <h2 class="title">Gallery</h2>
       </div>
       <div class="gallery-cart">
         <a href="#">
-          <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>View Cart
+          <span class="icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>View Cart
         </a>
       </div>
     </section>
     <section id="gallery">
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Book1.png" />
+          <img src="images/Client3_Book1.png" alt="Book: Brie Mine 4Ever" />
           <h3>Brie Mine 4Ever</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A book for cheese lovers</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Book2.png" />
+          <img src="images/Client3_Book2.png" alt="Book: Glory Riders" />
           <h3>Glory Riders</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A book about bikers</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Book3.png" />
+          <img src="images/Client3_Book3.png" alt="Book: Sorcerer's Shadowed Chronicles" />
           <h3>Sorcerer's Shadowed Chronicles</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A fantasy book</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Magazine1.png" />
+          <img src="images/Client3_Magazine1.png" alt="Magazine: Ball" />
           <h3>Ball</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A magazine about pickleball</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Magazine2.png" />
+          <img src="images/Client3_Magazine2.png" alt="Magazine: Travel" />
           <h3>Travel</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A magazine for travelers</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Magazine3.png" />
+          <img src="images/Client3_Magazine3.png" alt="Magazine: Eat." />
           <h3>Eat.</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A magazine for foodies</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Notebook.png" />
+          <img src="images/Client3_Notebook.png" alt="Notebook: Book Haven Bookstore" />
           <h3>Book Haven Bookstore Notebook</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A notebook with text on the cover that says <i>Book Haven Bookstore</i></p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_Stickers.png" />
+          <img src="images/Client3_Stickers.png" alt="Stickers" />
           <h3>Book Haven Bookstore stickers</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A set of four Book Haven Bookstore stickers that promote reading</p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
       <div class="gallery-item">
         <div class="gallery-item-top">
-          <img src="images/Client3_ToteBag.png" />
+          <img src="images/Client3_ToteBag.png" alt="Tote Bag: ALL I DO IS READ READ READ" />
           <h3>Canvas Tote Bag</h3>
         </div>
         <div class="gallery-item-bottom">
           <p>A canvas tote bag with black lettering that says <i>ALL I DO IS READ READ READ</i></p>
-          <a href="">Add to Cart</a>
+          <a href="#" role="button">Add to Cart</a>
         </div>
       </div>
     </section>
@@ -151,15 +152,15 @@
       <section class="footer-newsletter">
         <span class="newsletter-label">Sign up for<span class="break"><br /></span> our newsletter</span>
         <form>
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" aria-readonly="false" />
           <input type="button" value="Subscribe" />
         </form>
       </section>
       <section class="footer-social">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" aria-label="Facebook Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram" aria-label="Instagram Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter" aria-label="Twitter Link"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube" aria-label="YouTube Link"></i></a>
       </section>
       <section class="footer-links">
         <a href="index.html">Home</a>
